@@ -1,0 +1,66 @@
+.profile-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    min-width: rem(40px);
+    min-height: rem(40px);
+    background-color: transparent;  
+    border: none;
+    color: $slate-gray;
+    text-decoration: none;
+    cursor: pointer;  
+
+    &:hover{
+        color:$bunker ;
+        text-decoration: none;
+    }
+
+    &__name {
+        margin-right: rem(10px);
+        height: rem(20px);
+        font-size: $font-size-normal;
+        line-height: rem(17px);
+        font-weight: $font-weight-regular;
+        display: none;
+    }
+
+    
+    &__img {
+        border-radius: 50%;
+        width: rem(40px);
+        height: rem(40px);
+        display: none;
+    }
+
+    &__icon {
+        margin-bottom: rem(8px);
+
+        color: $curious_blue;
+    }
+
+    @media #{$screen-tablet} {
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: rem(1px);
+            height: 200%;
+            top: rem(-20px);
+            left: rem(-22px);
+            background-color: $athens-gray;
+        }
+
+        &__name {
+            display: block;
+        }
+
+        &__img {
+            display: block;
+        }
+
+        &__icon {
+            display: none;
+        }
+    }
+}

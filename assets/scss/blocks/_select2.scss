@@ -1,0 +1,81 @@
+.select2 {
+
+    span {
+        height: rem(50px) !important;
+    }
+
+    &-selection {
+        border: 1px solid $athens-gray !important;
+
+        &:focus {
+            border: 1px solid $slate-gray !important;
+        }
+    } 
+
+    
+    &-container--default {
+        width: 100% !important;
+    }
+
+    &-container--default &-selection--single &-selection__rendered {
+        padding: rem(17px) rem(34px) rem(17px) rem(20px);
+
+        line-height: rem(15px) !important;
+        color: $color-text;
+    }
+
+    &-results__option {
+        padding: rem(17px) rem(20px);
+    }
+
+    &-container--default &-results__option--highlighted.select2-results__option--selectable {
+        background-color: $color-background;
+        color: unset;
+    }
+
+    &-container--default &-results__option--selected {
+        background-color: $white;
+
+        font-family: $font-family-custom;
+        color: $wild-blue-yonder;
+    }
+
+    &-results {
+        ::-webkit-scrollbar {
+            width: rem(5px);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: $curious_blue;
+            border-radius: rem(5px);
+        }
+
+        ::-webkit-scrollbar-track {
+            background: $athens-gray;
+            width: rem(3px);
+        }
+
+        &__options {
+            scrollbar-color: $curious-blue $athens-gray;
+            scrollbar-width: thin;
+        }
+    }
+
+    &-container--default &-selection--single &-selection__arrow b {
+    
+        height: rem(7px) !important;
+        width: rem(12px) !important;
+
+        background-image: url("data:image/svg+xml,%3Csvg width='10' height='5' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 1L6 6L1 1' stroke='%236680AE' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        border: none !important;
+        
+    }
+
+    &-container--open &-selection__arrow {
+        transform: rotate(180deg) !important;
+
+    }
+}

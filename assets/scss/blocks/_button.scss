@@ -1,0 +1,45 @@
+.button {
+    padding: rem(17.5px) rem(30px);
+
+    color: $white; 
+
+    border-radius: $border-radius-medium;
+    background-color: $color-button;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $wild-blue-yonder;
+    }
+    
+
+    &:active {
+        background-color: $wild-blue-yonder;
+        opacity: 0.5;
+    }
+
+    &:disabled {
+        background-color:$athens-gray;
+        color: $heather;
+    }
+
+    &--link{
+        display: inline-block;
+     
+        padding: rem(17.5px) rem(30px);
+        
+        &:hover {
+            background-color: $wild-blue-yonder;
+            text-decoration: none;
+
+        }
+    }
+
+    &--span{
+        display: inline-block;
+        
+        padding: rem(17.5px) rem(30px); 
+    }
+
+   
+}

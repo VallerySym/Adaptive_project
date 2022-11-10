@@ -1,0 +1,74 @@
+.checkbox {
+
+    display: flex;
+    flex-direction: column;
+
+    &__label{
+        display: flex;
+    } 
+
+    &__input {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        -webkit-appearance: none;
+        appearance: none;
+        -moz-appearance: none;
+    }
+
+    
+    &__span {
+        position: relative;
+
+        display: block;
+
+        padding-top: rem(7px);
+        padding-left: rem(28px);
+
+        font-size: $font-size-normal;
+        line-height: rem(16px);
+
+        color: $bunker;
+    }
+
+    &__span::before {
+        position: absolute;
+        content: '';
+        left: 0;
+
+        width: rem(20px);
+        height: rem(20px);
+
+        border: rem(1px) solid $curious-blue;
+        border-radius: $border-radius-small;
+
+        background-repeat: no-repeat;
+        background-position: center ;
+    }
+
+    &__input:not(:disabled):active+&__span::before {
+        background-color: $curious-blue;
+        border-color: $curious-blue;
+    }
+
+    &__input:focus:not(:checked)+&_span::before {
+        border-color: $curious-blue;
+    }
+
+    &__input:checked+&__span::before {
+        border-color: $curious-blue;
+        background-color: $curious-blue;
+        background-image: url("data:image/svg+xml,%3Csvg width='11' height='8' viewBox='0 0 11 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.6778 0.334735C11.1074 0.781049 11.1074 1.50467 10.6778 1.95098L5.17782 7.66527C4.74824 8.11158 4.05176 8.11158 3.62218 7.66527L0.322183 4.23669C-0.107394 3.79038 -0.107394 3.06676 0.322183 2.62045C0.751759 2.17414 1.44824 2.17414 1.87782 2.62045L4.4 5.2409L9.12218 0.334735C9.55176 -0.111578 10.2482 -0.111578 10.6778 0.334735Z' fill='white'/%3E%3C/svg%3E%0A");
+    }
+
+    &__input:disabled+&__span::before {
+        background-color: $athens-gray;
+        border: rem(1px) solid $heather;
+    }
+
+    &__input:disabled:checked+&__span::before {
+        background-color: $athens-gray;
+        border: rem(1px) solid $heather;
+        background-image: url("data:image/svg+xml,%3Csvg width='11' height='8' viewBox='0 0 11 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.6778 0.334735C11.1074 0.781049 11.1074 1.50467 10.6778 1.95098L5.17782 7.66527C4.74824 8.11158 4.05176 8.11158 3.62218 7.66527L0.322183 4.23669C-0.107394 3.79038 -0.107394 3.06676 0.322183 2.62045C0.751759 2.17414 1.44824 2.17414 1.87782 2.62045L4.4 5.2409L9.12218 0.334735C9.55176 -0.111578 10.2482 -0.111578 10.6778 0.334735Z' fill='%23BBC4D6'/%3E%3C/svg%3E%0A");
+    }
+}

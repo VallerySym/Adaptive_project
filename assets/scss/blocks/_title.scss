@@ -1,0 +1,13 @@
+.title {
+    @include title-big;
+
+    &--medium {
+        @include title-medium;
+    }
+
+    &--small {
+        @include title-small;
+    }
+
+}
+ 

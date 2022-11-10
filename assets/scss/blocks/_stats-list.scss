@@ -1,0 +1,29 @@
+.stats-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    list-style-type: none;
+
+    margin: 0;
+    padding: 0;
+
+    &__item {
+        display: flex;
+        
+        margin-bottom: 0;
+
+        &:not(:last-child) {
+            margin-right: rem(12px);
+        }
+    }
+ 
+    &__icon {
+        margin-right: rem(6px);
+    }
+
+    &__number {
+        font-size: $font-size-small;
+        line-height: rem(14px);
+    }
+}

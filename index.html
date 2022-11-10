@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/style.css">
+    <title>Главная страница</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Шапка -->
+        <header class="header">
+            <div class="header__column-one">
+                <!-- Лого -->
+                <a class="header__logo  logo" href="#" aria-label="Логотип компании.">
+                    <svg class="logo__icon icon--logo" fill="currentColor" viewBox=" 0 0 128 128"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g >
+                            <path class="cls-1"
+                                d="M73,77.53a33,33,0,0,0,4.79-37l-12.87-25a1.12,1.12,0,0,0-.16-.22,1,1,0,0,0-1.46,0,1.12,1.12,0,0,0-.16.22l-12.87,25a33,33,0,0,0,4.79,37l8,8.85V112a1,1,0,0,0,2,0V86.38Zm-8-57.4,9.9,19.24a.76.76,0,0,0-.22.18L65,51.38Zm6.48,56.06L65,83.39V54.54L75.87,41.26l.11.22A31,31,0,0,1,71.48,76.19ZM63,20.13V60.2L50.79,44.66a.53.53,0,0,0-.12-.1A30.93,30.93,0,0,1,52,41.48ZM49.92,46.79,63,63.44v20l-6.48-7.2A31,31,0,0,1,49.92,46.79Z" />
+                            <path class="cls-1"
+                                d="M103.45,71.08a.94.94,0,0,0-.06-.28l0-.09a.94.94,0,0,0-.2-.29.84.84,0,0,0-.29-.2l-.09,0a1.4,1.4,0,0,0-.28-.06h-.06a1,1,0,0,0-.29,0L84.27,75.91a22.34,22.34,0,0,0-15.41,20l-.43,8.2s0,0,0,0a.93.93,0,0,0,0,.29.16.16,0,0,0,0,.1.87.87,0,0,0,.22.35,1,1,0,0,0,.32.21,1,1,0,0,0,.38.08h.06l8.19-.43a22.36,22.36,0,0,0,20-15.42l5.74-17.88a.92.92,0,0,0,0-.29ZM84.88,77.81l14-4.47L81.57,90.6,83,78.53A19.87,19.87,0,0,1,84.88,77.81Zm-4,1.8-1.6,13.28-8.72,8.72L70.85,96A20.36,20.36,0,0,1,80.88,79.61Zm-3.32,23.12L72,103,84.89,90.1,95.65,89A20.33,20.33,0,0,1,77.56,102.73ZM96.33,87l-9.2.92,13.11-13.12Z" />
+                            <path class="cls-1"
+                                d="M60.45,108.13v0L60,99.91a22.34,22.34,0,0,0-15.41-20L26.73,74.17a1,1,0,0,0-.3,0h0a1.59,1.59,0,0,0-.3.06l-.08,0a1,1,0,0,0-.49.49l0,.09a1.27,1.27,0,0,0-.06.28v.06a1,1,0,0,0,0,.29l5.74,17.88a22.36,22.36,0,0,0,20,15.42l8.19.43h.06a1,1,0,0,0,.38-.08,1,1,0,0,0,.32-.21,1,1,0,0,0,.23-.35s0-.06,0-.1A1.35,1.35,0,0,0,60.45,108.13ZM58,100l.29,5.59L45.4,92.69,44.33,81.93A20.37,20.37,0,0,1,58,100ZM43.17,90.46,30.05,77.34l12.2,3.91ZM28.64,78.75,45.89,96,33.83,94.56a18.85,18.85,0,0,1-.72-1.86Zm6.27,18L48.18,98.3,56.91,107l-5.59-.29A20.36,20.36,0,0,1,34.91,96.71Z" />
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="header__column-two">
+                <!-- Форма поиска -->
+                <form class="header__search-form search-form" method="post">
+                    <button class="search-form__button" type="submit">
+                        <svg class="search-form__icon icon--search-form">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-search-icon"></use>
+                        </svg>
+                    </button>
+                    <input class="search-form__input" type="text" aria-label="Поиск по сайту." placeholder="Найти.."
+                        required>
+                </form>
+            </div>
+            <div class="header__column-three">
+                <!-- Личный кабинет -->
+                <a class="header__profile-button profile-button" href="profile.html">
+                    <span class="profile-button__name">Валерия</span>
+                    <img class="profile-button__img" src="/assets/images/profile-img.jpg" width="40" height="40"
+                        alt="Изображание в личном кабинете.">
+                    <span class="profile-button__icon">
+                        <svg class="profile-button__icon icon--profile">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-profile-icon"></use>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </header>
+        <main class="main">
+            <!-- Слайдер -->
+            <div class="slider">
+                <div class="slider__slide slide">
+                    <div class="slide__question">
+                        <span class="slide__title ">Важное уведомление</span>
+                        <svg class="slide__icon--exclamation icon--slide">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-exclamation-mark"></use>
+                        </svg>
+                    </div>
+                    <p class="slide__text text">Удаленная работа. Инструкция для сотрудниково том как защитить себя от
+                        корон...</p>
+                    <div class="slide__container">
+                        <a class="slide__button button--link button " href="#">Подробнее</a>
+                    </div>
+                </div>
+                <div class="slider__slide slide">
+                    <div class="slide__question">
+                        <span class="slide__title ">Вопрос дня</span>
+                        <svg class="slide__icon--question icon--slide ">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-question-mark"></use>
+                        </svg>
+                    </div>
+                    <p class="slide__text text">Вы адекватный?</p>
+                    <div class="slide__container">
+                        <a class="slide__button unfilled-button--link unfilled-button " href="#">Нет</a>
+                        <a class="slide__button button--link button " href="#">Да</a>
+                    </div>
+                </div>
+                <div class="slider__slide slide">
+                    <div class="slide__question">
+                        <span class="slide__title ">Технические работы</span>
+                        <svg class=" slide__icon--info icon--slide">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-info-mark"></use>
+                        </svg>
+                    </div>
+                    <p class="slide__text text">Портал будет недоступен 14.08.2021 с 10:00 до 19:00</p>
+                    <div class="slide__container">
+                        <a class="slide__button button--link button " href="#">Ясно-понятно</a>
+                    </div>
+                </div>
+                <div class="slider__slide slide">
+                    <div class="slide__question">
+                        <span class="slide__title ">Опрос недели</span>
+                        <svg class=" slide__icon--question icon--slide">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-question-mark"></use>
+                        </svg>
+                    </div>
+                    <p class="slide__text text">Какую книгу вы больше всего любили, когда были маленьким?</p>
+                    <div class="slide__container">
+                        <a class="slide__button button--link button " href="#">Пройти опрос</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Интро -->
+            <section class="main__intro intro">
+                <h1 class="intro__title title">Название компании</h1>
+                <h2 class="intro__title title__medium">Описание компании</h2>
+                <p class=" intro__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+                    impedit pariatur odio! Nam eum, itaque tenetur dolores iste id ab corporis nobis dolor culpa
+                    voluptatum expedita labore cum natus cupiditate?</p>
+            </section>
+            <!-- Табы -->
+            <section class="main__tabs-section">
+                <h2 class="visually-hidden">Табы.</h2>
+                <ul class="tabs" role="tablist" aria-label="О компании">
+                    <li class="tabs__item" role="presentation">
+                        <button id="news-tab" class="tabs__tab" role="tab" aria-selected="true"
+                            aria-controls="news-tab-panel" type="button">
+                            Новости
+                        </button>
+                    </li>
+                    <li class="tabs__item" role="presentation">
+                        <button id="specials-tab" class="tabs__tab" role="tab" aria-selected="false"
+                            aria-controls="specials-tab-panel" type="button">
+                            Акции
+                        </button>
+                    </li>
+                </ul>
+                <section id="news-tab-panel" role="tabpanel" aria-labelledby="news-tab">
+                    <!-- Новости -->
+                    <ul class="news-list">
+                        <li class="news-list__item">
+                            <div class="card" >
+                                <a class="card__link" href="#"></a>
+                                <div class="card__content">
+                                    <img class="card__img img" src="./assets/images/promo-img.jpg" width="335"
+                                        height="159" alt="Изображение для новости.">
+                                    <button class="card__star star" type="button">
+                                        <svg class="star__icon icon--star">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-filled-star"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="card__wrapper">
+                                        <h3 class="card__title title--small" role="title">Заголовок новости</h3>
+                                        <p class="card__description text" role="message">Lorem ipsum, dolor sit amet
+                                            consectetur adipisicing elit. Maiores in cupiditate rem reprehenderit sed,
+                                            fugiat placeat hic ipsum non saepe excepturi optio iste aspernatur nostrum,
+                                            debitis expedita eaque delectus? Ducimus.</p>
+                                    </div>
+                                    <div class="card__footer ">
+                                        <span class="card__date date">04.02.2020</span>
+                                        <ul class="card__stats-list stats-list">
+                                            <li class="card__stats-item stats-list__item">
+                                                <svg class="card__stats-icon stats-list__icon icon--stats">
+                                                    <use xlink:href="public/images/icons/sprite.svg#icon-like">
+                                                    </use>
+                                                </svg>
+                                                <span class="card__stats-number stats-list__number">123</span>
+                                            </li>
+                                            <li class="stats-list__item">
+                                                <svg class="card__stats-icon stats-list__icon icon--stats">
+                                                    <use xlink:href="public/images/icons/sprite.svg#icon-comment">
+                                                    </use>
+                                                </svg>
+                                                <span class="card__stats-number stats-list__number">76</span>
+                                            </li>
+                                            <li class="stats-list__item">
+                                                <svg class="card__stats-icon stats-list__icon icon--stats">
+                                                    <use xlink:href="public/images/icons/sprite.svg#icon-view">
+                                                    </use>
+                                                </svg>
+                                                <span class="card__stats-number stats-list__number">74</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="news-list__item ">
+                            <div class="card" >
+                                <a class="card__link" href="#"></a>
+                                <div class="card__content">
+                                    <img class="card__img img" src="./assets/images/promo-img.jpg" width="335"
+                                        height="159" alt="Изображение для новости.">
+                                    <button class="card__star star" type="button">
+                                        <svg class="star__icon icon--star">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-filled-star"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="card__wrapper">
+                                        <h3 class="card__title title--small" role="title">Заголовок новости</h3>
+                                        <p class="card__description text" role="message">Lorem ipsum, dolor sit amet
+                                            consectetur adipisicing elit. Maiores in cupiditate rem reprehenderit sed,
+                                            fugiat placeat hic ipsum non saepe excepturi optio iste aspernatur nostrum,
+                                            debitis expedita eaque delectus? Ducimus.</p>
+                                    </div>
+                                    <div class="card__footer ">
+                                        <span class="card__date date">04.02.2020</span>
+                                        <ul class="card__stats-list stats-list">
+                                            <li class="card__stats-item stats-list__item">
+                                                <svg class="card__stats-icon stats-list__icon icon--stats">
+                                                    <use xlink:href="public/images/icons/sprite.svg#icon-like">
+                                                    </use>
+                                                </svg>
+                                                <span class="card__stats-number stats-list__number">123</span>
+                                            </li>
+                                            <li class="stats-list__item">
+                                                <svg class="card__stats-icon stats-list__icon icon--stats">
+                                                    <use xlink:href="public/images/icons/sprite.svg#icon-comment">
+                                                    </use>
+                                                </svg>
+                                                <span class="card__stats-number stats-list__number">76</span>
+                                            </li>
+                                            <li class="stats-list__item">
+                                                <svg class="card__stats-icon stats-list__icon icon--stats">
+                                                    <use xlink:href="public/images/icons/sprite.svg#icon-view">
+                                                    </use>
+                                                </svg>
+                                                <span class="card__stats-number stats-list__number">74</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="news-list__item news-list__item--large">
+                            <div class="card--large ">
+                                <a class="card__link" href="#"></a>
+                                <div class="card__content--large ">
+                                    <img class="card__img--large  img--large " src="./assets/images/promo-img.jpg"
+                                        width="335" height="159" alt="Изображение для новости.">
+                                    <button class="card__star--large  star" type="button">
+                                        <svg class="card__icon--large star__icon icon--star">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-filled-star"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="card__container--large">
+                                        <div class="card__wrapper--large">
+                                            <h3 class="card__title--large title--small" role="title">Заголовок новости
+                                            </h3>
+                                            <p class="card__description--large text" role="message">Lorem ipsum, dolor
+                                                sit amet
+                                                consectetur adipisicing elit. Maiores in cupiditate rem reprehenderit
+                                                sed,
+                                                fugiat placeat hic ipsum non saepe excepturi optio iste aspernatur
+                                                nostrum,
+                                                debitis expedita eaque delectus? Ducimus.</p>
+                                        </div>
+                                        <div class="card__footer--large ">
+                                            <span class="card__date--large date--large">04.02.2020</span>
+                                            <ul class="card__stats-list--large stats-list">
+                                                <li class="card__stats-item--large stats-list__item">
+                                                    <svg class="card__stats-icon--large stats-list__icon icon--stats">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-like">
+                                                        </use>
+                                                    </svg>
+                                                    <span
+                                                        class="card__stats-number--large stats-list__number">123</span>
+                                                </li>
+                                                <li class="card__stats-item--large stats-list__item">
+                                                    <svg class="card__stats-icon--large stats-list__icon icon--stats">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-comment">
+                                                        </use>
+                                                    </svg>
+                                                    <span class="card__stats-number--large stats-list__number">76</span>
+                                                </li>
+                                                <li class="card__stats-item--large stats-list__item">
+                                                    <svg class="card__stats-icon--large stats-list__icon icon--stats">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-view">
+                                                        </use>
+                                                    </svg>
+                                                    <span class="card__stats-number--large stats-list__number">74</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="news-list__item ">
+                            <a class="card" href="#">
+                                <div class="card__content">
+                                    <img class="card__img img" src="./assets/images/promo-img.jpg" width="335"
+                                        height="159" alt="Изображение для новости.">
+                                    <button class="card__star star" type="button">
+                                        <svg class="star__icon icon--star">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-filled-star"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="card__wrapper">
+                                        <h3 class="card__title title--small" role="title">Заголовок новости</h3>
+                                        <p class="card__description text" role="message">Lorem ipsum, dolor sit amet
+                                            consectetur adipisicing elit. Maiores in cupiditate rem reprehenderit sed,
+                                            fugiat placeat hic ipsum non saepe excepturi optio iste aspernatur nostrum,
+                                            debitis expedita eaque delectus? Ducimus.</p>
+                                    </div>
+                                    <div class="card__footer ">
+                                        <span class="card__date date">04.02.2020</span>
+                                        <ul class="card__stats-list stats-list">
+                                            <li class="card__stats-item stats-list__item">
+                                                <svg class="card__stats-icon stats-list__icon icon--stats">
+                                                    <use xlink:href="public/images/icons/sprite.svg#icon-like">
+                                                    </use>
+                                                </svg>
+                                                <span class="card__stats-number stats-list__number">123</span>
+                                            </li>
+                                            <li class="stats-list__item">
+                                                <svg class="card__stats-icon stats-list__icon icon--stats">
+                                                    <use xlink:href="public/images/icons/sprite.svg#icon-comment">
+                                                    </use>
+                                                </svg>
+                                                <span class="card__stats-number stats-list__number">76</span>
+                                            </li>
+                                            <li class="stats-list__item">
+                                                <svg class="card__stats-icon stats-list__icon icon--stats">
+                                                    <use xlink:href="public/images/icons/sprite.svg#icon-view">
+                                                    </use>
+                                                </svg>
+                                                <span class="card__stats-number stats-list__number">74</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="news-list__item ">
+                            <a class="card" href="#">
+                                <div class="card__content">
+                                    <img class="card__img img" src="./assets/images/promo-img.jpg" width="335"
+                                        height="159" alt="Изображение для новости.">
+                                    <button class="card__star star" type="button">
+                                        <svg class="star__icon icon--star">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-filled-star"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="card__wrapper">
+                                        <h3 class="card__title title--small" role="title">Заголовок новости</h3>
+                                        <p class="card__description text" role="message">Lorem ipsum, dolor sit amet
+                                            consectetur adipisicing elit. Maiores in cupiditate rem reprehenderit sed,
+                                            fugiat placeat hic ipsum non saepe excepturi optio iste aspernatur nostrum,
+                                            debitis expedita eaque delectus? Ducimus.</p>
+                                    </div>
+                                    <div class="card__footer ">
+                                        <span class="card__date date">04.02.2020</span>
+                                        <ul class="card__stats-list stats-list">
+                                            <li class="card__stats-item stats-list__item">
+                                                <svg class="card__stats-icon stats-list__icon icon--stats">
+                                                    <use xlink:href="public/images/icons/sprite.svg#icon-like">
+                                                    </use>
+                                                </svg>
+                                                <span class="card__stats-number stats-list__number">123</span>
+                                            </li>
+                                            <li class="stats-list__item">
+                                                <svg class="card__stats-icon stats-list__icon icon--stats">
+                                                    <use xlink:href="public/images/icons/sprite.svg#icon-comment">
+                                                    </use>
+                                                </svg>
+                                                <span class="card__stats-number stats-list__number">76</span>
+                                            </li>
+                                            <li class="stats-list__item">
+                                                <svg class="card__stats-icon stats-list__icon icon--stats">
+                                                    <use xlink:href="public/images/icons/sprite.svg#icon-view">
+                                                    </use>
+                                                </svg>
+                                                <span class="card__stats-number stats-list__number">74</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="main__show-more show-more-button ">
+                        <a class="show-more-button__link  button--link button " href="#">Смотреть еще
+                            <svg class="show-more-button__icon icon--show-more">
+                                <use xlink:href="public/images/icons/sprite.svg#icon-arrow-button"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </section>
+                <section id="specials-tab-panel" role="tabpanel" aria-labelledby="specials-tab" hidden>
+                    <!-- Акции -->
+                    <ul class="promo-list">
+                        <li class="promo-list__item">
+                            <div class="card--promo" href="#">
+                                <a class="card__link--promo" href="#"></a>
+                                <div class="card__content--promo">
+                                    <img class="card__img--promo img--promo" src="./assets/images/promo-img.jpg"
+                                        width="335" height="159" alt="Изображение для новости.">
+                                    <button class="card__star--promo star" type="button">
+                                        <svg class="card__icon--promo star__icon icon--star">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-filled-star"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="card__container--promo">
+                                        <ul class="card__tags--promo tags">
+                                            <li class="card__tag--promo  tags__item ">
+                                                <a class="tags__link " href="">TAG</a>
+                                            </li>
+                                            <li class="tags__item ">
+                                                <a class="card__tag--promo tags__link" href="">TAG</a>
+                                            </li>
+                                        </ul>
+                                        <div class="card__wrapper--promo">
+                                            <h3 class="card__title--promo title--small" role="title">Заголовок новости
+                                            </h3>
+                                            <p class="card__description--promo text" role="message">Lorem ipsum, dolor
+                                                sit
+                                                amet
+                                                consectetur adipisicing elit. Maiores in cupiditate rem reprehenderit
+                                                sed,
+                                                fugiat placeat hic ipsum non saepe excepturi optio iste aspernatur
+                                                nostrum,
+                                                debitis expedita eaque delectus? Ducimus.</p>
+                                        </div>
+                                        <div class="card__footer--promo ">
+                                            <span class="card__date--promo date--promo">04.02.2020</span>
+                                            <ul class="card__stats-list--promo stats-list">
+                                                <li class="card__stats-item--promo stats-list__item">
+                                                    <svg class="card__stats-icon--promo stats-list__icon icon--stats">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-like">
+                                                        </use>
+                                                    </svg>
+                                                    <span
+                                                        class="card__stats-number--promo stats-list__number">123</span>
+                                                </li>
+                                                <li class="stats-list__item--promo">
+                                                    <svg class="card__stats-icon--promo stats-list__icon icon--stats">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-comment">
+                                                        </use>
+                                                    </svg>
+                                                    <span class="card__stats-number--promo stats-list__number">76</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="promo-list__item ">
+                            <div class="card--promo" href="#">
+                                <a class="card__link--promo" href="#"></a>
+                                <div class="card__content--promo-left">
+                                    <img class="card__img--promo img--promo-left" src="./assets/images/promo-img.jpg"
+                                        width="335" height="159" alt="Изображение для новости.">
+                                    <button class="card__star--promo star" type="button">
+                                        <svg class="card__icon--promo star__icon icon--star">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-filled-star"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="card__container--promo">
+                                        <ul class="card__tags--promo tags">
+                                            <li class="card__tag--promo  tags__item ">
+                                                <a class="tags__link " href="">TAG</a>
+                                            </li>
+                                            <li class="tags__item ">
+                                                <a class="card__tag--promo tags__link" href="">TAG</a>
+                                            </li>
+                                        </ul>
+                                        <div class="card__wrapper--promo">
+                                            <h3 class="card__title--promo title--small" role="title">Заголовок новости
+                                            </h3>
+                                            <p class="card__description--promo text" role="message">Lorem ipsum, dolor
+                                                sit
+                                                amet
+                                                consectetur adipisicing elit. Maiores in cupiditate rem reprehenderit
+                                                sed,
+                                                fugiat placeat hic ipsum non saepe excepturi optio iste aspernatur
+                                                nostrum,
+                                                debitis expedita eaque delectus? Ducimus.</p>
+                                        </div>
+                                        <div class="card__footer--promo ">
+                                            <span class="card__date--promo date--promo">04.02.2020</span>
+                                            <ul class="card__stats-list--promo stats-list">
+                                                <li class="card__stats-item--promo stats-list__item">
+                                                    <svg class="card__stats-icon--promo stats-list__icon icon--stats">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-like">
+                                                        </use>
+                                                    </svg>
+                                                    <span
+                                                        class="card__stats-number--promo stats-list__number">123</span>
+                                                </li>
+                                                <li class="stats-list__item--promo">
+                                                    <svg class="card__stats-icon--promo stats-list__icon icon--stats">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-comment">
+                                                        </use>
+                                                    </svg>
+                                                    <span class="card__stats-number--promo stats-list__number">76</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="promo-list__item ">
+                            <div class="card--promo" href="#">
+                                <a class="card__link--promo" href="#"></a>
+                                <div class="card__content--promo">
+                                    <img class="card__img--promo img--promo" src="./assets/images/promo-img.jpg"
+                                        width="335" height="159" alt="Изображение для новости.">
+                                    <button class="card__star--promo star" type="button">
+                                        <svg class="card__icon--promo star__icon icon--star">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-filled-star"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="card__container--promo">
+                                        <ul class="card__tags--promo tags">
+                                            <li class="card__tag--promo  tags__item ">
+                                                <a class="tags__link " href="">TAG</a>
+                                            </li>
+                                            <li class="tags__item ">
+                                                <a class="card__tag--promo tags__link" href="">TAG</a>
+                                            </li>
+                                        </ul>
+                                        <div class="card__wrapper--promo">
+                                            <h3 class="card__title--promo title--small" role="title">Заголовок новости
+                                            </h3>
+                                            <p class="card__description--promo text" role="message">Lorem ipsum, dolor
+                                                sit
+                                                amet
+                                                consectetur adipisicing elit. Maiores in cupiditate rem reprehenderit
+                                                sed,
+                                                fugiat placeat hic ipsum non saepe excepturi optio iste aspernatur
+                                                nostrum,
+                                                debitis expedita eaque delectus? Ducimus.</p>
+                                        </div>
+                                        <div class="card__footer--promo ">
+                                            <span class="card__date--promo date--promo">04.02.2020</span>
+                                            <ul class="card__stats-list--promo stats-list">
+                                                <li class="card__stats-item--promo stats-list__item">
+                                                    <svg class="card__stats-icon--promo stats-list__icon icon--stats">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-like">
+                                                        </use>
+                                                    </svg>
+                                                    <span
+                                                        class="card__stats-number--promo stats-list__number">123</span>
+                                                </li>
+                                                <li class="stats-list__item--promo">
+                                                    <svg class="card__stats-icon--promo stats-list__icon icon--stats">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-comment">
+                                                        </use>
+                                                    </svg>
+                                                    <span class="card__stats-number--promo stats-list__number">76</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="main__show-more show-more-button ">
+                        <a class="show-more-button__link  button--link button " href="#">Смотреть еще
+                            <svg class="show-more-button__icon icon--show-more">
+                                <use xlink:href="public/images/icons/sprite.svg#icon-arrow-button"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </section>
+            </section>
+        </main>
+        <!-- Подвал -->
+        <footer class="footer">
+            <div class="footer__column footer__column--one">
+                <!-- Соцсети -->
+                <ul class="footer__social-list  social-list">
+                    <li class="social-list__item">
+                        <a class="social-list__link" href="#">
+                            <svg class="social-list__icon icon--social-list">
+                                <use xlink:href="public/images/icons/sprite.svg#icon-youtube-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a class="social-list__link" href="#">
+                            <svg class="social-list__icon icon--social-list">
+                                <use xlink:href="public/images/icons/sprite.svg#icon-instagram-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__column footer__column--two">
+                <!-- Документация -->
+                <ul class="footer__documents-list  documents-list">
+                    <li class="documents-list__item">
+                        <a class="documents-list__link" href="#">Правила</a>
+                    </li>
+                    <li class="documents-list__item">
+                        <a class="documents-list__link" href="#">Документы</a>
+                    </li>
+                    <li class="documents-list__item">
+                        <a class="documents-list__link" href="#">Политика конфиденциальности</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__column footer__column--three">
+                <!-- Лого -->
+                <a class="footer__logo  logo-footer" href="https://qsoft.ru" aria-label="Логотип компании QSOFT.">
+                    <svg class="logo-footer__icon icon--footer-logo" fill="currentColor" viewBox=" 0 0 128 128"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g >
+                            <path class="cls-1"
+                                d="M73,77.53a33,33,0,0,0,4.79-37l-12.87-25a1.12,1.12,0,0,0-.16-.22,1,1,0,0,0-1.46,0,1.12,1.12,0,0,0-.16.22l-12.87,25a33,33,0,0,0,4.79,37l8,8.85V112a1,1,0,0,0,2,0V86.38Zm-8-57.4,9.9,19.24a.76.76,0,0,0-.22.18L65,51.38Zm6.48,56.06L65,83.39V54.54L75.87,41.26l.11.22A31,31,0,0,1,71.48,76.19ZM63,20.13V60.2L50.79,44.66a.53.53,0,0,0-.12-.1A30.93,30.93,0,0,1,52,41.48ZM49.92,46.79,63,63.44v20l-6.48-7.2A31,31,0,0,1,49.92,46.79Z" />
+                            <path class="cls-1"
+                                d="M103.45,71.08a.94.94,0,0,0-.06-.28l0-.09a.94.94,0,0,0-.2-.29.84.84,0,0,0-.29-.2l-.09,0a1.4,1.4,0,0,0-.28-.06h-.06a1,1,0,0,0-.29,0L84.27,75.91a22.34,22.34,0,0,0-15.41,20l-.43,8.2s0,0,0,0a.93.93,0,0,0,0,.29.16.16,0,0,0,0,.1.87.87,0,0,0,.22.35,1,1,0,0,0,.32.21,1,1,0,0,0,.38.08h.06l8.19-.43a22.36,22.36,0,0,0,20-15.42l5.74-17.88a.92.92,0,0,0,0-.29ZM84.88,77.81l14-4.47L81.57,90.6,83,78.53A19.87,19.87,0,0,1,84.88,77.81Zm-4,1.8-1.6,13.28-8.72,8.72L70.85,96A20.36,20.36,0,0,1,80.88,79.61Zm-3.32,23.12L72,103,84.89,90.1,95.65,89A20.33,20.33,0,0,1,77.56,102.73ZM96.33,87l-9.2.92,13.11-13.12Z" />
+                            <path class="cls-1"
+                                d="M60.45,108.13v0L60,99.91a22.34,22.34,0,0,0-15.41-20L26.73,74.17a1,1,0,0,0-.3,0h0a1.59,1.59,0,0,0-.3.06l-.08,0a1,1,0,0,0-.49.49l0,.09a1.27,1.27,0,0,0-.06.28v.06a1,1,0,0,0,0,.29l5.74,17.88a22.36,22.36,0,0,0,20,15.42l8.19.43h.06a1,1,0,0,0,.38-.08,1,1,0,0,0,.32-.21,1,1,0,0,0,.23-.35s0-.06,0-.1A1.35,1.35,0,0,0,60.45,108.13ZM58,100l.29,5.59L45.4,92.69,44.33,81.93A20.37,20.37,0,0,1,58,100ZM43.17,90.46,30.05,77.34l12.2,3.91ZM28.64,78.75,45.89,96,33.83,94.56a18.85,18.85,0,0,1-.72-1.86Zm6.27,18L48.18,98.3,56.91,107l-5.59-.29A20.36,20.36,0,0,1,34.91,96.71Z" />
+                        </g>
+                    </svg>
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script src="public/js/script.js"></script>
+</body>
+
+</html>

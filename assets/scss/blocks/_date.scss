@@ -1,0 +1,21 @@
+.date {
+    font-size: $font-size-small;
+    line-height: rem(14px);
+    color: $slate-gray;
+
+    &--large{
+        color: $white;
+    }
+
+    &--promo{
+        color: $bunker;
+    }
+
+    &--info{ 
+        display: none;
+
+        @media #{$screen-tablet}{
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+.form {
+    padding: 0 rem(20px);
+
+    background-color: $white;
+    box-shadow: $box-shadow-large;
+    border-radius: $border-radius-medium;
+
+
+    @media #{$screen-tablet} {
+        padding: 0 rem(59px);
+    }
+    
+
+    @media #{$screen-desktop} {
+        padding: 0 rem(110px); 
+    }
+
+    &__wrapper {
+        margin-bottom: rem(19px);
+
+        &--small-margin {
+            margin-bottom: rem(10px);
+        }
+
+        &--without-margin {
+            margin-bottom: 0;
+        }
+
+    }
+
+    &__subtitle {
+        margin-bottom: rem(11px);
+        padding: rem(49px) 0 0 0;
+
+        font-weight: $font-weight-medium;
+        font-size: $font-size-large;
+        line-height: 127%;
+    }
+
+    &__buttons-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: rem(26px) 0 rem(50px) 0;
+
+        @media #{$screen-tablet} {
+            justify-content: flex-end;
+
+        }
+    }
+
+    &__unfilled-button {
+        padding: rem(17.5px) rem(20px);
+        margin-right: rem(15px);
+    }
+
+}

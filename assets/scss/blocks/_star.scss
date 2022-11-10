@@ -1,0 +1,13 @@
+.star {
+    border: none;
+    border-radius: 0 rem(8px) 0 rem(8px);
+    background-color: $white;
+
+    cursor: pointer;
+
+    &__icon {
+        color: $curious_blue;
+    }
+
+}
+ 

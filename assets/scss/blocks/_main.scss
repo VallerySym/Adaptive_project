@@ -1,0 +1,11 @@
+.main {
+    flex-grow: 1;
+
+    background-color: $alabaster;
+    padding: $layout-padding-mobile;
+
+    @media #{$screen-desktop} {
+        padding: $layout-padding-desctop; 
+    }  
+}
+ 

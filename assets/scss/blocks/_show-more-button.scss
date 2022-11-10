@@ -1,0 +1,12 @@
+.show-more-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: rem(100px);
+    margin-top: rem(20px);
+
+    &__icon{ 
+        color: $white;
+    }
+} 

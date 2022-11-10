@@ -1,0 +1,31 @@
+.social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 0 ;
+
+    list-style-type: none;
+
+    &__item{
+        margin-right: rem(20px);
+        margin-bottom: 0;
+    }
+
+    &__item:last-child{
+        margin-right: 0; 
+    } 
+
+    &__icon{
+        color: $heather;
+    }
+
+    &__icon:hover{
+        color: $slate-gray;
+    }
+
+    @media #{$screen-tablet}{
+        padding: 0;
+    }
+}

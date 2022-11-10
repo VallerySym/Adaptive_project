@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/style.css">
+    <title>Личный кабинет</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Шапка -->
+        <header class="header">
+            <div class="header__column-one">
+                <!-- Лого -->
+                <a class="header__logo  logo" href="#" aria-label="Логотип компании.">
+                    <svg class="logo__icon icon--logo" fill="currentColor" viewBox=" 0 0 128 128"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path class="cls-1"
+                                d="M73,77.53a33,33,0,0,0,4.79-37l-12.87-25a1.12,1.12,0,0,0-.16-.22,1,1,0,0,0-1.46,0,1.12,1.12,0,0,0-.16.22l-12.87,25a33,33,0,0,0,4.79,37l8,8.85V112a1,1,0,0,0,2,0V86.38Zm-8-57.4,9.9,19.24a.76.76,0,0,0-.22.18L65,51.38Zm6.48,56.06L65,83.39V54.54L75.87,41.26l.11.22A31,31,0,0,1,71.48,76.19ZM63,20.13V60.2L50.79,44.66a.53.53,0,0,0-.12-.1A30.93,30.93,0,0,1,52,41.48ZM49.92,46.79,63,63.44v20l-6.48-7.2A31,31,0,0,1,49.92,46.79Z" />
+                            <path class="cls-1"
+                                d="M103.45,71.08a.94.94,0,0,0-.06-.28l0-.09a.94.94,0,0,0-.2-.29.84.84,0,0,0-.29-.2l-.09,0a1.4,1.4,0,0,0-.28-.06h-.06a1,1,0,0,0-.29,0L84.27,75.91a22.34,22.34,0,0,0-15.41,20l-.43,8.2s0,0,0,0a.93.93,0,0,0,0,.29.16.16,0,0,0,0,.1.87.87,0,0,0,.22.35,1,1,0,0,0,.32.21,1,1,0,0,0,.38.08h.06l8.19-.43a22.36,22.36,0,0,0,20-15.42l5.74-17.88a.92.92,0,0,0,0-.29ZM84.88,77.81l14-4.47L81.57,90.6,83,78.53A19.87,19.87,0,0,1,84.88,77.81Zm-4,1.8-1.6,13.28-8.72,8.72L70.85,96A20.36,20.36,0,0,1,80.88,79.61Zm-3.32,23.12L72,103,84.89,90.1,95.65,89A20.33,20.33,0,0,1,77.56,102.73ZM96.33,87l-9.2.92,13.11-13.12Z" />
+                            <path class="cls-1"
+                                d="M60.45,108.13v0L60,99.91a22.34,22.34,0,0,0-15.41-20L26.73,74.17a1,1,0,0,0-.3,0h0a1.59,1.59,0,0,0-.3.06l-.08,0a1,1,0,0,0-.49.49l0,.09a1.27,1.27,0,0,0-.06.28v.06a1,1,0,0,0,0,.29l5.74,17.88a22.36,22.36,0,0,0,20,15.42l8.19.43h.06a1,1,0,0,0,.38-.08,1,1,0,0,0,.32-.21,1,1,0,0,0,.23-.35s0-.06,0-.1A1.35,1.35,0,0,0,60.45,108.13ZM58,100l.29,5.59L45.4,92.69,44.33,81.93A20.37,20.37,0,0,1,58,100ZM43.17,90.46,30.05,77.34l12.2,3.91ZM28.64,78.75,45.89,96,33.83,94.56a18.85,18.85,0,0,1-.72-1.86Zm6.27,18L48.18,98.3,56.91,107l-5.59-.29A20.36,20.36,0,0,1,34.91,96.71Z" />
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="header__column-two">
+                <!-- Форма поиска -->
+                <form class="header__search-form search-form" method="post">
+                    <button class="search-form__button" type="submit">
+                        <svg class="search-form__icon icon--search-form">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-search-icon"></use>
+                        </svg>
+                    </button>
+                    <input class="search-form__input" type="text" aria-label="Поиск по сайту." placeholder="Найти.."
+                        required>
+                </form>
+            </div>
+            <div class="header__column-three">
+                <!-- Личный кабинет -->
+                <a class="header__profile-button profile-button" href="profile.html">
+                    <span class="profile-button__name">Валерия</span>
+                    <img class="profile-button__img" src="/assets/images/profile-img.jpg" width="40" height="40"
+                        alt="Изображание в личном кабинете.">
+                    <span class="profile-button__icon">
+                        <svg class="profile-button__icon icon--profile">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-profile-icon"></use>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </header>
+        <!-- Основное -->
+        <main class=" main-profile">
+            <!-- Боковое меню на десктопе -->
+            <aside class="main-profile__sidebar sidebar">
+                <ul class="sidebar__list">
+                    <li class="sidebar__item">
+                        <a class="sidebar__link" href="#">Избранное</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a class="sidebar__link" href="#">Моя компания</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a class="sidebar__link" href="#">Моё развитие</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a class="sidebar__link" href="#">Новости компании</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a class="sidebar__link" href="#">Телефонная книга</a>
+                    </li>
+                </ul>
+            </aside>
+            <div class="main-profile__content">
+                <!-- Меню для телефона и планшета -->
+                <section class="main-profile__menu menu">
+                    <h2 class="visually-hidden">Меню.</h2>
+                    <button class="menu__button unfilled-button" type="button">
+                        <span class="menu__span">
+                            <svg class="menu__icon icon--menu-button">
+                                <use xlink:href="public/images/icons/sprite.svg#icon-menu-button"></use>
+                            </svg>
+                        </span>
+                        Меню раздела</button>
+                </section>
+                <!-- Хлебные крошки -->
+                <section class="main-profile__breadcrumbs breadcrumbs">
+                    <h2 class="visually-hidden">Хлебный крошки.</h2>
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="index.html">Главная</a>
+                            <span class="breadcrumbs__span">
+                                <svg class="breadcrumbs__icon icon--breadcrumbs">
+                                    <use xlink:href="public/images/icons/sprite.svg#icon-arrow-breadcrumbs"></use>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Тут</a>
+                            <span class="breadcrumbs__span">
+                                <svg class="breadcrumbs__icon icon--breadcrumbs">
+                                    <use xlink:href="public/images/icons/sprite.svg#icon-arrow-breadcrumbs"></use>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Будут</a>
+                            <span class="breadcrumbs__span">
+                                <svg class="breadcrumbs__icon icon--breadcrumbs">
+                                    <use xlink:href="public/images/icons/sprite.svg#icon-arrow-breadcrumbs"></use>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Хлебные</a>
+                            <span class="breadcrumbs__span">
+                                <svg class="breadcrumbs__icon icon--breadcrumbs">
+                                    <use xlink:href="public/images/icons/sprite.svg#icon-arrow-breadcrumbs"></use>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Крошки</a>
+                            <span class="breadcrumbs__span">
+                                <svg class="breadcrumbs__icon icon--breadcrumbs">
+                                    <use xlink:href="public/images/icons/sprite.svg#icon-arrow-breadcrumbs"></use>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__link">В две строки</span>
+                        </li>
+                    </ul>
+                </section>
+                <!-- Редактирование профиля -->
+                <section class="main-profile__edit-section edit-section">
+                    <h1 class="edit-section__title title">Редактировать профиль</h1>
+                    <form class="edit-section__form form" action="#">
+                        <h2 class="form__subtitle ">Общее</h2>
+                        <div class="form__wrapper form-element">
+                            <label class="form-element__label" for="name">Имя
+                                <span class="form-element__star">*</span>
+                            </label>
+                            <input class="form-element__input" type="text" minlength="3" name="name" id="name"
+                                placeholder="Введите имя..." required>
+                        </div>
+                        <div class="form__wrapper form-element">
+                            <label class="form-element__label" for="surname">Фамилия
+                                <span class="form-element__star">*</span>
+                            </label>
+                            <input class="form-element__input" type="text" minlength="3" name="surname" id="surname"
+                                placeholder="Введите фамилию" required>
+                        </div>
+                        <div class="form__wrapper form-element form-element--disabled">
+                            <label class="form-element__label " for="city">Город
+                            </label>
+                            <input id="city" class="form-element__input" type="text" placeholder="Назвние города..."
+                                disabled>
+                        </div>
+                        <div class="form__wrapper form__wrapper--without-margin form-element--textarea">
+                            <label class="form-element__label " for="about">Расскажите о себе</label>
+                            <textarea id="about" class="form-element__input form-element__input--textarea"
+                                placeholder="Введите пару слов о себе..."></textarea>
+                        </div>
+                        <h2 class="form__subtitle ">Контакты</h2>
+                        <div class="form__wrapper form-element">
+                            <label class="form-element__label" for="tel">Основной телефон
+                                <span class="form-element__star">*</span>
+                            </label>
+                            <input class="form-element__input number" type="tel" name="phone" id="tel"
+                                placeholder="Номер телефона..." data-mask-phone required>
+                        </div>
+                        <div class="form__wrapper form-element">
+                            <label class="form-element__label" for="tel1">Дополнительный телефон
+                            </label>
+                            <input class="form-element__input number" type="tel" name="phone" id="tel1"
+                                placeholder="+7 (_ _ _) _ _ _- _ _ - _ _" data-mask-phone>
+                        </div>
+                        <div class="form__wrapper form-element">
+                            <label class="form-element__label" for="tel2">Дополнительный телефон 2
+                            </label>
+                            <input class="form-element__input number" type="tel" name="phone" id="tel2"
+                                placeholder="+7 (_ _ _) _ _ _- _ _ - _ _" data-mask-phone>
+                        </div>
+                        <div class="form__wrapper form-element">
+                            <label class="form-element__label" for="tel3">Дополнительный телефон 3
+                            </label>
+                            <input class="form-element__input number" type="tel" name="phone" id="tel3"
+                                placeholder="+7 (_ _ _) _ _ _- _ _ - _ _" data-mask-phone>
+                        </div>
+                        <div class="form__wrapper form-element">
+                            <label class="form-element__label" for="tel4">Дополнительный телефон 4
+                            </label>
+                            <input class="form-element__input number" type="tel" name="phone" id="tel4"
+                                placeholder="+7 (_ _ _) _ _ _- _ _ - _ _" data-mask-phone>
+                        </div>
+                        <div class="form__wrapper form-element">
+                            <label class="form-element__label" for="email">E-Mail
+                                <span class="form-element__star">*</span>
+                            </label>
+                            <input class="form-element__input email" name="email" id="email" placeholder="E-mail..."
+                                data-mask-email required>
+                        </div>
+                        <div class="form__wrapper form__wrapper--without-margin form-element">
+                            <label class="form-element__label" for="email2">E-Mail 2
+                            </label>
+                            <input class="form-element__input email" name="email" id="email2"
+                                placeholder="example@icloud.com" data-mask-email>
+                        </div>
+                        <h2 class="form__subtitle ">Мое мнение о чекбоксах</h2>
+                        <div class="form__wrapper checkbox">
+                            <label class="checkbox__label">
+                                <input class=" checkbox__input " type="checkbox" name="name" value="value1" disabled
+                                    checked>
+                                <span class="checkbox__span">Неактивен, выбран</span>
+                            </label>
+                        </div>
+                        <div class="form__wrapper checkbox">
+                            <label class="checkbox__label">
+                                <input class="checkbox__input" type="checkbox" name="name" value="value2" disabled>
+                                <span class="checkbox__span">Неактивен, не выбран</span>
+                            </label>
+                        </div>
+                        <div class="form__wrapper checkbox">
+                            <label class="checkbox__label">
+                                <input class="checkbox__input" type="checkbox" name="name" value="value3" checked>
+                                <span class="checkbox__span">Я люблю чекбоксы</span>
+                            </label>
+                        </div>
+                        <div class="form__wrapper form__wrapper--without-margin checkbox">
+                            <label class="checkbox__label">
+                                <input class="checkbox__input" type="checkbox" name="name" value="value3">
+                                <span class="checkbox__span">Я ненавижу чекбоксы</span>
+                            </label>
+                        </div>
+                        <h2 class="form__subtitle ">Мое мнение о радио-кнопках</h2>
+                        <div class="form__wrapper radio">
+                            <label class="radio__label">
+                                <input class="radio__input" type="radio" name="name1" value="value1" disabled checked>
+                                <span class="radio__span">Неактивна, выбрана</span>
+                            </label>
+                        </div>
+                        <div class="form__wrapper radio">
+                            <label class="radio__label">
+                                <input class="radio__input" type="radio" name="name1" value="value2" disabled>
+                                <span class="radio__span">Неактивна, не выбрана</span>
+                            </label>
+                        </div>
+                        <div class="form__wrapper radio">
+                            <label class="radio__label">
+                                <input class="radio__input" type="radio" name="name2" value="value3" checked>
+                                <span class="radio__span">Я люблю радио-кнопки</span>
+                            </label>
+                        </div>
+                        <div class="form__wrapper form__wrapper--small-margin radio">
+                            <label class="radio__label">
+                                <input class="radio__input" type="radio" name="name2" value="value4">
+                                <span class="radio__span">Я ненавижу радио-кнопки</span>
+                            </label>
+                        </div>
+                        <div class="form__wrapper form-element--texarea form-element--disabled">
+                            <label class="form-element__label " for="name1">Напишите причину ненависти</label>
+                            <textarea id="name1" class="form-element__input form-element__input--textarea"
+                                placeholder="Причина...." disabled></textarea>
+                        </div>
+                        <div class="form__buttons-wrapper ">
+                            <button class="form__unfilled-button unfilled-button" type="button">Отменить</button>
+                            <button class="form__button button" type="submit">Сохранить изменения</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </main>
+        <!-- Подвал -->
+        <footer class="footer">
+            <div class="footer__column footer__column--one">
+                <!-- Соцсети -->
+                <ul class="footer__social-list  social-list">
+                    <li class="social-list__item">
+                        <a class="social-list__link" href="#">
+                            <svg class="social-list__icon icon--social-list">
+                                <use xlink:href="public/images/icons/sprite.svg#icon-youtube-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a class="social-list__link" href="#">
+                            <svg class="social-list__icon icon--social-list">
+                                <use xlink:href="public/images/icons/sprite.svg#icon-instagram-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__column footer__column--two">
+                <!-- Документация -->
+                <ul class="footer__documents-list  documents-list">
+                    <li class="documents-list__item">
+                        <a class="documents-list__link" href="#">Правила</a>
+                    </li>
+                    <li class="documents-list__item">
+                        <a class="documents-list__link" href="#">Документы</a>
+                    </li>
+                    <li class="documents-list__item">
+                        <a class="documents-list__link" href="#">Политика конфиденциальности</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__column footer__column--three">
+                <!-- Лого -->
+                <a class="footer__logo  logo-footer" href="https://qsoft.ru" aria-label="Логотип компании QSOFT.">
+                    <svg class="logo-footer__icon icon--footer-logo" fill="currentColor" viewBox=" 0 0 128 128"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path class="cls-1"
+                                d="M73,77.53a33,33,0,0,0,4.79-37l-12.87-25a1.12,1.12,0,0,0-.16-.22,1,1,0,0,0-1.46,0,1.12,1.12,0,0,0-.16.22l-12.87,25a33,33,0,0,0,4.79,37l8,8.85V112a1,1,0,0,0,2,0V86.38Zm-8-57.4,9.9,19.24a.76.76,0,0,0-.22.18L65,51.38Zm6.48,56.06L65,83.39V54.54L75.87,41.26l.11.22A31,31,0,0,1,71.48,76.19ZM63,20.13V60.2L50.79,44.66a.53.53,0,0,0-.12-.1A30.93,30.93,0,0,1,52,41.48ZM49.92,46.79,63,63.44v20l-6.48-7.2A31,31,0,0,1,49.92,46.79Z" />
+                            <path class="cls-1"
+                                d="M103.45,71.08a.94.94,0,0,0-.06-.28l0-.09a.94.94,0,0,0-.2-.29.84.84,0,0,0-.29-.2l-.09,0a1.4,1.4,0,0,0-.28-.06h-.06a1,1,0,0,0-.29,0L84.27,75.91a22.34,22.34,0,0,0-15.41,20l-.43,8.2s0,0,0,0a.93.93,0,0,0,0,.29.16.16,0,0,0,0,.1.87.87,0,0,0,.22.35,1,1,0,0,0,.32.21,1,1,0,0,0,.38.08h.06l8.19-.43a22.36,22.36,0,0,0,20-15.42l5.74-17.88a.92.92,0,0,0,0-.29ZM84.88,77.81l14-4.47L81.57,90.6,83,78.53A19.87,19.87,0,0,1,84.88,77.81Zm-4,1.8-1.6,13.28-8.72,8.72L70.85,96A20.36,20.36,0,0,1,80.88,79.61Zm-3.32,23.12L72,103,84.89,90.1,95.65,89A20.33,20.33,0,0,1,77.56,102.73ZM96.33,87l-9.2.92,13.11-13.12Z" />
+                            <path class="cls-1"
+                                d="M60.45,108.13v0L60,99.91a22.34,22.34,0,0,0-15.41-20L26.73,74.17a1,1,0,0,0-.3,0h0a1.59,1.59,0,0,0-.3.06l-.08,0a1,1,0,0,0-.49.49l0,.09a1.27,1.27,0,0,0-.06.28v.06a1,1,0,0,0,0,.29l5.74,17.88a22.36,22.36,0,0,0,20,15.42l8.19.43h.06a1,1,0,0,0,.38-.08,1,1,0,0,0,.32-.21,1,1,0,0,0,.23-.35s0-.06,0-.1A1.35,1.35,0,0,0,60.45,108.13ZM58,100l.29,5.59L45.4,92.69,44.33,81.93A20.37,20.37,0,0,1,58,100ZM43.17,90.46,30.05,77.34l12.2,3.91ZM28.64,78.75,45.89,96,33.83,94.56a18.85,18.85,0,0,1-.72-1.86Zm6.27,18L48.18,98.3,56.91,107l-5.59-.29A20.36,20.36,0,0,1,34.91,96.71Z" />
+                        </g>
+                    </svg>
+                </a>
+            </div>
+        </footer>
+    </div>
+   
+
+    </div>
+    <script src="public/js/script.js"></script>
+    <script src="assets/js/modal.js"> </script>
+</body>
+
+</html>

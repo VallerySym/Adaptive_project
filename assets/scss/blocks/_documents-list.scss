@@ -1,0 +1,39 @@
+.documents-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    padding: rem(23px) 0;
+
+    text-align: center;
+ 
+    list-style-type: none;
+
+    @media #{$screen-tablet} {
+        align-items: unset;
+        justify-content: flex-start;
+        flex-direction: row;
+
+        padding: 0;
+    }
+
+    &__item {
+        margin-bottom: rem(20px);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @media #{$screen-tablet} {
+            margin-right: rem(30px);
+            margin-bottom: rem(5px);
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,19 @@
+.intro{
+    padding: rem(40px) 0;
+    max-width: rem(621px);
+
+    @media #{$screen-tablet}{
+        padding: rem(50px) 0 rem(40px) 0;
+        width: rem(600px);
+    }
+
+    @media #{$screen-desktop}{
+        padding:rem(25px) 0 rem(40px) 0;
+        width: rem(621px);
+    }
+    
+
+    &__text{
+        line-height: 167%;
+    }
+} 

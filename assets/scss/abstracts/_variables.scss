@@ -1,0 +1,76 @@
+/**
+* Colors
+*/
+$outer-space: #202f2f;
+$color-text: $outer-space;
+$white: #ffffff;
+$alabaster: #fafafa;
+$curious_blue: #34aadd;
+$wild-blue-yonder: #6680ae;
+$athens-gray: #ebebf1;
+$slate-gray: #768298;
+$heather: #bbc4d6;
+$cerise-red: #dc2c53;
+$bunker: #121920;
+$carnation: #f95a59;
+$red_orange: #ff3332;
+$thunder: #231F20;
+$tapestry: #a7507b;
+
+$color-text:$bunker;
+$color-text-light:$slate-gray;
+$color-background:$alabaster;
+$color-button:$curious_blue;
+$color-blockquote-mark:$cerise-red;
+$color-link:$curious_blue;
+
+/**
+* Fonts
+*/
+$font-path: "/assets/fonts";
+
+$font-family-default: "Arial", "Helvetica", sans-serif;
+$font-family-custom: "Roboto";
+
+$font-family: $font-family-custom, $font-family-default;
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+
+$font-size-base: 16px;
+$font-size-huge: rem(36px);
+$font-size-large: rem(24px);
+$font-size-medium: rem(18px);
+$font-size-normal: rem(14px);
+$font-size-small: rem(12px);
+
+
+/**
+* Breakpoints
+*/
+// Пример указания медиазапросов, затем можно использовать ее как '@media #{$screen-medium} {...}'
+$screen-tablet: '(min-width: 768px)';
+$screen-desktop: '(min-width: 1440px)';
+
+
+/**
+* Layout
+*/
+$layout-padding-mobile: 0 rem(20px) ; 
+$layout-padding-desctop: 0 rem(100px); ; 
+
+
+
+/**
+* Radius
+*/
+$border-radius-small: rem(2px);
+$border-radius-medium:rem(5px);
+$border-radius-large: rem(8px);
+
+/**
+* Box-shadows
+*/
+$box-shadow-small:  0 rem(3px) rem(10px) rgba(0, 0, 0, 0.05);
+$box-shadow-large:  0 rem(12px) rem(40px) rgba(0, 0, 0, 0.03), 0 rem(3px) rem(10px) rgba(164, 164, 164, 0.03);
+

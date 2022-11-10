@@ -1,0 +1,197 @@
+.card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%; 
+
+    border-radius: rem(10px);
+    background-color: $white;
+
+    color: $bunker;
+
+    &:hover {
+        filter:
+            drop-shadow(rem(-3px) rem(0px) rem(40px) rgba(0, 0, 0, 0.1)) drop-shadow(rem(0px) rem(0px) rem(10px) rgba(164, 164, 164, 0.03));
+
+        transition-duration: 150ms;
+
+        text-decoration: none;
+    }
+
+    &__link{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__star {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &__wrapper {
+        padding: rem(50px) rem(20px);
+    }
+
+    &:hover &__title,
+    &:hover &__description {
+        color: $curious_blue;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+
+        padding: rem(20px);
+    }
+
+    &__stats-icon,
+    &__stats-number {
+        color: $slate-gray ;
+    }
+
+    // Большая карточка новостей
+
+    &--large {
+        position: relative;
+        color: $white;
+
+        &:hover {
+            filter:
+                brightness(0.7);
+
+            transition-duration: 150ms;
+
+            text-decoration: none;
+        }
+    }
+
+    &__star--large {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &__img--large {
+        width: 100%;
+        height: 100%;
+        border-radius: rem(10px);
+    }
+
+    &__container--large {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    &__wrapper--large {
+        padding: rem(50px) rem(20px);
+    }
+
+    &__footer--large {
+        display: flex;
+        justify-content: space-between;
+        padding: rem(20px);
+    }
+
+    // Карточка акций
+
+    &--promo {
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        height: 100%;
+
+        border-radius: rem(10px);
+        background-color: $white;
+
+        color: $bunker;
+        cursor: pointer;
+
+        &:hover {
+            filter:
+                drop-shadow(rem(-3px) rem(0px) rem(40px) rgba(0, 0, 0, 0.1)) drop-shadow(rem(0px) rem(0px) rem(10px) rgba(164, 164, 164, 0.03));
+
+            transition-duration: 150ms;
+
+            text-decoration: none;
+        }
+
+
+
+    }
+
+    &__content--promo {
+
+        @media #{$screen-tablet} {
+            display: flex;
+            flex-direction: row-reverse;
+
+        }
+    }
+
+    &__content--promo-left {
+        @media #{$screen-tablet} {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    &__container--promo {
+        padding: rem(10px) rem(20px);
+
+        @media #{$screen-tablet} {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__star--promo {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &__wrapper--promo {
+        padding: rem(50px) 0;
+
+        @media #{$screen-tablet} {
+            padding: rem(20px) 0 rem(60px) 0;
+
+        }
+    }
+
+    &__footer--promo {
+        display: flex;
+        justify-content: space-between;
+
+
+    }
+
+    &--promo:hover &__title--promo,
+    &--promo:hover &__description--promo {
+
+        color: $curious_blue;
+    }
+
+    &__link--promo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+    }
+
+
+
+}

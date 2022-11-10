@@ -1,0 +1,34 @@
+.main-profile {
+    flex-grow: 1;
+
+    padding: 0;
+    margin-bottom: rem(100px);
+
+    background-color: $alabaster;
+
+    @media #{$screen-desktop} {
+        display: flex;
+        align-items: flex-start;
+
+        padding: rem(50) rem(100px) rem(100px) rem(100px);
+    }
+
+    &__sidebar{
+        margin-right: rem(38px);
+    }
+
+    &__content{
+        flex-grow: 1;
+    }
+
+    &__menu{
+        margin-bottom: rem(30px);
+    }
+
+    @media #{$screen-tablet}{
+        &__breadcrumbs{
+            margin-bottom: rem(10px);
+        }
+
+    } 
+}

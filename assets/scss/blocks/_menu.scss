@@ -1,0 +1,36 @@
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: rem(13px) 0;
+    width: 100%;
+
+    background-color: $white;
+
+    @media #{$screen-desktop} {
+        display: none;
+    }
+
+    &__button {
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__span {
+        display: block;
+        margin-right: rem(10px);
+    }
+
+    &__icon {
+        color: $curious_blue;
+
+        &:hover,
+        &:active {
+            color: $wild-blue-yonder;
+        }
+    }
+
+
+}

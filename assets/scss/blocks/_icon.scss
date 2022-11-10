@@ -1,0 +1,58 @@
+.icon {
+    &--logo {
+        width: rem(50px);
+        height: rem(50px);
+    }
+
+    &--search-form{
+        width: rem(16px);
+        height: rem(16px);
+    }
+
+    
+    &--profile{
+        width: rem(16px); 
+        height: rem(16px);
+    }
+
+    &--social-list{
+        width: rem(40px);
+        height:rem(40px) ;
+    }
+
+    &--footer-logo{
+        width: rem(50px);
+        height: rem(50px);
+    }
+
+    &--menu-button{
+        width: rem(24px);
+        height: rem(24px);
+    }
+
+    &--breadcrumbs{
+        width: rem(6px);
+        height: rem(10px);
+    }
+
+    &--star{
+        width: rem(19px);
+        height: rem(19px);
+    }
+
+    &--show-more{
+        width: rem(10px);
+        height: rem(9px);
+    }
+
+    &--stats{
+        width: rem(14px);
+        height: rem(13px);
+    }
+
+    &--slide{
+        width: rem(20px);
+        height: rem(20px);
+    }
+
+}

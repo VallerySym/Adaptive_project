@@ -1,0 +1,29 @@
+.sidebar {
+    display: none;
+
+    width: rem(268px);
+
+    border-radius: $border-radius-large;
+    box-shadow: $box-shadow-large;
+    background-color: $white;
+
+    &__list {
+        list-style-type: none;
+        padding: 0;
+    } 
+
+    &__item {
+        width: 100%;
+
+        margin-bottom: 0;
+        padding: rem(21px) rem(30px);
+    }
+
+    &__link{
+        color: $bunker;
+    }
+
+    @media #{$screen-desktop} {
+        display: block;
+    }
+}

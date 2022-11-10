@@ -1,0 +1,75 @@
+.radio {
+    display: flex;
+    flex-direction: column;
+
+    &__label{
+        display: flex; 
+    }
+
+    &__input {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        -webkit-appearance: none;
+        appearance: none;
+        -moz-appearance: none;
+    }
+    
+
+    &__span {
+        position: relative;
+
+        display: block;
+
+        padding-top: rem(7px);
+        padding-left: rem(28px);
+
+        font-size: $font-size-normal;
+        line-height: rem(16px);
+
+        color: $bunker;
+    }
+
+    &__span::before {
+        position: absolute;
+        content: '';
+        left: 0;
+
+        width: rem(18px);
+        height: rem(18px);
+
+
+        border: rem(1px)solid $curious-blue;
+        border-radius: 50%;
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50%;
+    }
+
+    &__input:not(:disabled):active+&__span::before {
+        background-color: $curious-blue;
+        border-color: $curious-blue;
+    }
+
+    &__input:focus:not(:checked)+&_span::before {
+        border-color: $curious-blue;
+    }
+
+    &__input:checked+&__span::before {
+        border-color: $curious-blue;
+        background-color: $white;
+        background-image: url("data:image/svg+xml,%3Csvg width='11' height='11' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='10' height='10' rx='5' fill='%2334AADD'/%3E%3C/svg%3E%0A");
+    }
+
+    &__input:disabled+&__span::before {
+        background-color: $athens-gray;
+        border: rem(1px) solid $heather;
+    }
+
+    &__input:disabled:checked+&__span::before {
+        background-color: $athens-gray;
+        border: rem(1px) solid $heather;
+        background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='10' height='10' rx='5' fill='%23BBC4D6'/%3E%3C/svg%3E%0A");
+    }
+}

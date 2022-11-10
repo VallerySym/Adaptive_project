@@ -1,0 +1,41 @@
+.img {
+    width: 100%;
+    height: rem(159px);
+
+    border-radius: rem(10px) rem(10px) 0 0;
+
+    &--large {
+        width: 100%;
+        max-height: rem(443px);
+        border-radius: rem(10px);
+    }
+
+
+    &--promo {
+        width: 100%;
+        border-radius: rem(10px) rem(10px) 0 0;
+ 
+
+        @media #{$screen-tablet} {
+            border-radius: 0 rem(10px) rem(10px) 0;
+
+            min-width: rem(229px);
+            max-width: rem(392px);
+            height: rem(219px);
+        }
+    }
+
+    &--promo-left {
+        width: 100%;
+        border-radius: rem(10px) rem(10px) 0 0;
+
+        @media #{$screen-tablet} {
+            border-radius: rem(10px) 0 0 rem(10px);
+
+            min-width: rem(229px);
+            max-width: rem(392px);
+            height: rem(219px);
+
+        }
+    }
+}

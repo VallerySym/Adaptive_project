@@ -1,0 +1,28 @@
+.unfilled-button {
+    background-color: transparent;
+    border: none;
+    color: $curious-blue;
+
+    cursor: pointer;
+
+    &:hover {
+        color: $wild-blue-yonder;
+    }
+
+    &:active {
+        color: $wild-blue-yonder;
+        opacity: 0.5;
+    }
+
+    &:disabled {
+        color:$heather;
+       opacity: 0.5;
+    }
+
+    &--link{
+        &:hover, 
+        &:active{
+            text-decoration: none;
+        }
+    }
+}
